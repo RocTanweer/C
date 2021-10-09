@@ -18,5 +18,11 @@ int main()
     printf("The value of b is %f \n", b);
     printf("The value of b is '%c' \n", c);
     printf("The sum of a and d is %d \n", a + d);
+
+    // variables can be reassigned
+    int num2 = 1;
+    printf("%d\n", num2); // 1
+    num2 = 2;
+    printf("%d\n", num2); // 2
     return 0;
 }
