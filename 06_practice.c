@@ -61,18 +61,20 @@ int main()
     float income, tax = 0.0;
     printf("Please Enter your annual income...\n");
     scanf("%f", &income);
-
-    if (income >= 250000 && income <= 500000)
+    if (income >= 1000000)
     {
-        tax = tax + 0.05 * (income - 250000);
+        tax = tax + 0.30 * (income - 1000000);
+        income = 1000000.00;
     }
     if (income >= 500000 && income <= 1000000)
     {
         tax = tax + 0.20 * (income - 500000);
+        income = 500000.00;
     }
-    if (income >= 1000000)
+    if (income >= 250000 && income <= 500000)
     {
-        tax = tax + 0.30 * (income - 1000000);
+        tax = tax + 0.05 * (income - 250000);
+        income = 250000.00;
     }
 
     printf("Amount of tax you are required to pay is : %f\n", tax);
