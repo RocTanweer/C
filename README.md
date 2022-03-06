@@ -25,9 +25,11 @@ Run the command as directed below👇
 
 ## Table of Contents
 
-- [mario: C](#mario)
+- [mario](#mario)
   - [easy](#mario-easy)
   - [hard](#mario-hard)
+- [greedy](#greedy)
+  - [cash](#cash)
 
 ## Mario
 
@@ -57,4 +59,20 @@ Height:4
     ## ##
    ### ###
   #### ####
+```
+
+## Greedy
+
+Greedy is an algorithm that always takes the best immediate, or local, solution while finding an answer.
+
+### cash
+
+This program helps finding the minimum(best immediate) number of coins</br> that a customer is owed for a given number of cents.
+
+[see the code for this👇](/greedy/cash/cash.c)
+
+```bash
+~/greedy/cash (master) $ ./cash
+How many cents the customer is owed: 33
+Number of coins: 5
 ```
