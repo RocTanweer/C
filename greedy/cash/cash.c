@@ -28,11 +28,11 @@ int main(void)
     int pennies = calculate_pennies(cents);
     cents = cents - pennies * 1;
 
-    // Sum coins
-    int coins = quarters + dimes + nickels + pennies;
-
-    // Print total number of coins to give the customer
-    printf("Number of coins: %i\n", coins);
+    // Print number of coins of each type to give the customer
+    printf("Number of pennies: %i\n", pennies);
+    printf("Number of nickels: %i\n", nickels);
+    printf("Number of dimes: %i\n", dimes);
+    printf("Number of quarters: %i\n", quarters);
 }
 
 int get_cents(void)

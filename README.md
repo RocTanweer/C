@@ -73,6 +73,9 @@ This program helps finding the minimum(best immediate) number of coins</br> that
 
 ```bash
 ~/greedy/cash (master) $ ./cash
-How many cents the customer is owed: 33
-Number of coins: 5
+How many cents the customer is owed: 43
+Number of pennies: 3
+Number of nickels: 1
+Number of dimes: 1
+Number of quarters: 1
 ```
