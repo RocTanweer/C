@@ -1,6 +1,8 @@
 #include "../../lib/cs50.h"
 #include <stdio.h>
 
+void make_pyramid(int num_of_rows, int space_count);
+
 int main(void)
 {
     int Height;
@@ -11,17 +13,29 @@ int main(void)
         Height = get_int("Height: ");
     } while (Height < 1 || Height > 8);
 
-    // Looping through 0 to Height twice, for rows and it's corresponding columns
-    for (int i = 0; i < Height; i++) // for rows
+    make_pyramid(Height, 0); // 0, since last row won't have any space in the pyramid
+}
+
+void make_pyramid(int num_of_rows, int space_count)
+{
+    // condition(s) to stop the recursion
+    if (num_of_rows <= 0)
     {
-        for (int j = 0; j < Height - (i + 1); j++) // for ' ' part of column
-        {
-            printf(" ");
-        }
-        for (int k = 0; k < (i + 1); k++) // for '#' part of column
-        {
-            printf("#");
-        }
-        printf("\n");
+        return;
     }
+
+    // calling the function again with different argument
+    make_pyramid(num_of_rows - 1, space_count + 1);
+
+    // printing current row
+    for (int j = 0; j < space_count; j++)
+    {
+        printf(" ");
+    }
+
+    for (int i = 0; i < num_of_rows; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
