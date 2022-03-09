@@ -1,3 +1,4 @@
+#include "../../lib/cs50.h"
 #include <stdio.h>
 
 int get_length(long long num);
@@ -6,13 +7,16 @@ int last_nth_digit(long long num, int place);
 int main(void)
 {
     // Ask the user for the input
-    long long card_num;
-    printf("Enter card_num: ");
-    scanf("%lld", &card_num);
-    printf("card_num: %lld\n", card_num);
+    // "long" was enough on codespace of cs50x
+    long long card_num = get_long_long("Enter card_num: ");
+
+    // In case cs50.h and cs50.c are not present
+    // long long card_num;
+    // printf("Enter card_num: ");
+    // scanf("%lld", &card_num);
+
     // Get the number of digits in card_num
     int length_num = get_length(card_num);
-    printf("length_num: %d\n", length_num);
     int checksum = 0;
 
     // ------ check if that input is correct based on Luhn's Algorithm ------
@@ -34,7 +38,6 @@ int main(void)
         {
             // add the digit
             checksum += ith_digit_x2;
-            // printf("checksum loop1 : %d\n", checksum);
         }
     }
 
@@ -46,15 +49,12 @@ int main(void)
 
         // += 1xdigit checksum
         checksum += jth_digit;
-        // printf("checksum loop2 : %d\n", checksum);
     }
-    // printf("checksum : %d\n", checksum);
     // check if that checksum ends with 0 (for card number validation)
     if (checksum % 10 != 0)
     {
-        printf("checking for checksum 0\n");
         printf("INVALID\n");
-        return 0;
+        return 1;
     }
 
     // check which type of card it is (AMEX, MASERCARD, VISA)
@@ -68,19 +68,22 @@ int main(void)
     if (length_num == 15 && ((first_digit == 3) && ((second_digit == 4) || second_digit == 7)))
     {
         printf("AMEX\n");
+        return 0;
     }
     else if (length_num == 16 && ((first_digit == 5) && ((second_digit == 1) || (second_digit == 2) || (second_digit == 3) || (second_digit == 4) || (second_digit == 5))))
     {
         printf("MASTERCARD\n");
+        return 0;
     }
     else if ((length_num == 13 || length_num == 16) && (first_digit == 4))
     {
         printf("VISA\n");
+        return 0;
     }
     else
     {
-        printf("neither of them\n");
         printf("INVALID\n");
+        return 1;
     }
 }
 
