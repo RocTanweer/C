@@ -30,6 +30,8 @@ Run the command as directed below👇
   - [hard](#mario-hard)
 - [greedy](#greedy)
   - [cash](#cash)
+- [luhn](#luhn)
+  - [credit](#credit)
 
 ## Mario
 
@@ -79,3 +81,32 @@ Number of nickels: 1
 Number of dimes: 1
 Number of quarters: 1
 ```
+
+## Luhn
+
+The Luhn's algorithm or Luhn formula, also known as the "modulus 10" or "mod 10" algorithm,is a simple checksum formula used to validate a variety of identification numbers, such as credit card numbers.
+
+### credit
+
+This program will take a credit card number and tell whether it is _Mastercard_, _American Express(AMEX)_ or _Visa_. It says INVALID, in case the card belongs to none of them.
+
+[see the code for this👇](/luhn/credit/credit.c)
+
+```bash
+~/luhn/credit (master) $ ./credit
+Enter card_num: 4111111111111111
+VISA
+```
+
+<!--
+```bash
+~/luhn/credit (master) $ ./credit
+Enter card_num: 378282246310005
+AMEX
+```
+
+```bash
+~/luhn/credit (master) $ ./credit
+Enter card_num: 5105105105105100
+MASTERCARD
+``` -->
