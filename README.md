@@ -32,6 +32,8 @@ Run the command as directed below👇
   - [cash](#cash)
 - [luhn](#luhn)
   - [credit](#credit)
+- [games](#games)
+  - [scrabble](#scrabble)
 
 ## Mario
 
@@ -98,15 +100,19 @@ Enter card_num: 4111111111111111
 VISA
 ```
 
-<!--
-```bash
-~/luhn/credit (master) $ ./credit
-Enter card_num: 378282246310005
-AMEX
-```
+## Games
+
+These are some command-line games.
+
+### Scrabble
+
+This is a two player game in which both players are suppose to write a word. Player whose word correspond to more points wins. Point of a word is decided by adding points of each character, which is given in the program.
+
+[see the code for this👇](/games/scrabble/scrabble.c)
 
 ```bash
-~/luhn/credit (master) $ ./credit
-Enter card_num: 5105105105105100
-MASTERCARD
-``` -->
+~/games/scrabble (master) $ ./scrabble
+Player 1: COMPUTER
+Player 2: science
+Player 1 wins!
+```
