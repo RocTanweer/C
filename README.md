@@ -34,6 +34,8 @@ Run the command as directed below👇
   - [credit](#credit)
 - [games](#games)
   - [scrabble](#scrabble)
+- [math](#math)
+  - [euclid](#euclid)
 
 ## Mario
 
@@ -115,4 +117,19 @@ This is a two player game in which both players are suppose to write a word. Pla
 Player 1: COMPUTER
 Player 2: science
 Player 1 wins!
+```
+
+## Math
+
+These are some programs related to mathematical algorithms and proves.
+
+### Euclid
+
+Euclid's algorithm, is an efficient method for computing the greatest common divisor (GCD) of two integers (numbers), the largest number that divides them both without a remainder.
+
+[see the code for this👇](/math/euclid/gcd.c)
+
+```bash
+~/math/euclid (master) $ ./gcd 168 252 329 105 189
+gcd is : 7
 ```
