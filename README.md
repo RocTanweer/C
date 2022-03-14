@@ -36,6 +36,7 @@ Run the command as directed below👇
   - [scrabble](#scrabble)
 - [math](#math)
   - [euclid](#euclid)
+  - [modulus](#modulus)
 
 ## Mario
 
@@ -132,4 +133,17 @@ Euclid's algorithm, is an efficient method for computing the greatest common div
 ```bash
 ~/math/euclid (master) $ ./gcd 168 252 329 105 189
 gcd is : 7
+```
+
+### modulus
+
+Modulo is a math operation that finds the remainder when one integer is divided by another.
+
+[see the code for this👇](/math/modulus/mul_inverse.c)
+
+```bash
+~/math/modulus (master) $ ./mul_inverse
+Give me the multiplicative inverse of: 33
+Under modulo: 13
+The inverse of 33 under modulo 13 is 2
 ```
