@@ -37,6 +37,7 @@ Run the command as directed below👇
 - [math](#math)
   - [euclid](#euclid)
   - [modulus](#modulus)
+  - [reverse](#reverse)
 
 ## Mario
 
@@ -146,4 +147,16 @@ Modulo is a math operation that finds the remainder when one integer is divided 
 Give me the multiplicative inverse of: 33
 Under modulo: 13
 The inverse of 33 under modulo 13 is 2
+```
+
+### reverse
+
+This is a program which reverses the digits of a number.
+
+[see the code for this👇](/math/reverse_num/reverse_num.c)
+
+```bash
+~/math/reverse (master) $ ./reverse_num
+Enter your number: 546
+reversed number: 645
 ```
