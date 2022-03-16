@@ -34,6 +34,7 @@ Run the command as directed below👇
   - [credit](#credit)
 - [games](#games)
   - [scrabble](#scrabble)
+  - [pangram](#pangram)
 - [math](#math)
   - [euclid](#euclid)
   - [modulus](#modulus)
@@ -119,6 +120,18 @@ This is a two player game in which both players are suppose to write a word. Pla
 Player 1: COMPUTER
 Player 2: science
 Player 1 wins!
+```
+
+### Pangram
+
+This is a game where user type a text and the program will tell whether it contains(pangram!) all the alphabetical characters(case insensitive) or not(not pangram!).
+
+[see the code for this👇](/games/pangram/pangram.c)
+
+```bash
+~/games/scrabble (master) $ ./pangram
+Enter the text: The quick, brown fox jumps over the lazy dog!
+pangram!
 ```
 
 ## Math
