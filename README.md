@@ -25,9 +25,9 @@ Run the command as directed below👇
 
 ## Table of Contents
 
-- [mario](#mario)
-  - [easy](#mario-easy)
-  - [hard](#mario-hard)
+- [patterns](#patterns)
+  - [mario easy](#mario-easy)
+  - [mario hard](#mario-hard)
 - [greedy](#greedy)
   - [cash](#cash)
 - [luhn](#luhn)
@@ -40,13 +40,13 @@ Run the command as directed below👇
   - [modulus](#modulus)
   - [reverse](#reverse)
 
-## Mario
+## Patterns
 
-These are two program that prints _pyramid_ on the screen like in the mario game.
+These programs prints patterns of hashes on the screen.
 
 ### Mario Easy
 
-[see the code for this👇](/mario/easy/mario_easy.c)
+[see the code for this👇](/patterns/mario_easy/mario_easy.c)
 
 ```bash
 ~/mario/easy (master) $ ./mario_easy
@@ -59,7 +59,7 @@ Height:4
 
 ### Mario Hard
 
-[see the code for this👇](/mario/hard/mario_hard.c)
+[see the code for this👇](/patterns/mario_hard/mario_hard.c)
 
 ```bash
 ~/mario/hard (master) $ ./mario_hard
