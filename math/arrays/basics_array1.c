@@ -87,5 +87,5 @@ void print_sum(int array[])
 
 void print_average(int array[])
 {
-    printf("Average: %f", sum / length);
+    printf("Average: %f", (float)sum / length);
 }
