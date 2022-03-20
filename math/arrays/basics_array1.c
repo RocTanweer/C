@@ -9,6 +9,7 @@ void print_average(int array[]);
 void print_min(int array[]);
 void print_max(int array[]);
 void print_array_set(int array[]);
+void print_array_reversed(int array[]);
 
 // global var
 int counter;
@@ -46,6 +47,8 @@ int main()
     print_max(array);
     printf("\n");
     print_array_set(array);
+    printf("\n");
+    print_array_reversed(array);
     printf("\n");
     return 0;
 }
@@ -165,6 +168,32 @@ void print_array_set(int array[])
     for (int i = 0; i < length - found_duplicates; i++)
     {
         if (i == (length - found_duplicates) - 1)
+        {
+            printf("%d]", array[i]);
+        }
+        else
+        {
+            printf("%d, ", array[i]);
+        }
+    }
+}
+
+void print_array_reversed(int array[])
+{
+    int halfLength = length / 2;
+    for (int i = 0; i < halfLength; i++)
+    {
+        int temp;
+        temp = array[i];
+        array[i] = array[length - (i + 1)];
+        array[length - (i + 1)] = temp;
+    };
+
+    printf("Reverse of the array is: [");
+
+    for (int i = 0; i < length; i++)
+    {
+        if (i == (length)-1)
         {
             printf("%d]", array[i]);
         }
