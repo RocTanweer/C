@@ -38,7 +38,8 @@ Run the command as directed below👇
 - [math](#math)
   - [euclid](#euclid)
   - [modulus](#modulus)
-  - [reverse](#reverse)
+  - [reverse num](#reverse-num)
+  - [arrays](#arrays)
 
 ## Patterns
 
@@ -162,7 +163,7 @@ Under modulo: 13
 The inverse of 33 under modulo 13 is 2
 ```
 
-### reverse
+### reverse num
 
 This is a program which reverses the digits of a number.
 
@@ -172,4 +173,28 @@ This is a program which reverses the digits of a number.
 ~/math/reverse (master) $ ./reverse_num
 Enter your number: 546
 reversed number: 645
+```
+
+### arrays
+
+These are a collection of programs which performs certain operation on array elements
+
+[see the codes for this👇](/math/arrays/)
+
+```bash
+~/math/arrays (master) $ #./<program_executable>
+Enter the length of the array: 5
+Element 0: 1
+Element 1: 2
+Element 2: 3
+Element 3: 3
+Element 4: 5
+Sum: 14
+Average: 2.80
+Minimum: 1
+Maximum: 5
+Even values are: 2
+Odd values are: 1 3 3 5
+Set of the array: [1, 2, 3, 5]
+Set of the array: [5, 3, 3, 2, 1]
 ```
