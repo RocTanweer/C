@@ -34,12 +34,14 @@ Run the command as directed below👇
   - [credit](#credit)
 - [games](#games)
   - [scrabble](#scrabble)
-  - [pangram](#pangram)
 - [math](#math)
   - [euclid](#euclid)
   - [modulus](#modulus)
   - [reverse num](#reverse-num)
   - [arrays](#arrays)
+- [generals](#generals)
+  - [pangram](#pangram)
+  - [Characters Frequency](#characters-frequency)
 
 ## Patterns
 
@@ -123,18 +125,6 @@ Player 2: science
 Player 1 wins!
 ```
 
-### Pangram
-
-This is a game where user type a text and the program will tell whether it contains(pangram!) all the alphabetical characters(case insensitive) or not(not pangram!).
-
-[see the code for this👇](/games/pangram/pangram.c)
-
-```bash
-~/games/scrabble (master) $ ./pangram
-Enter the text: The quick, brown fox jumps over the lazy dog!
-pangram!
-```
-
 ## Math
 
 These are some programs related to mathematical algorithms and proves.
@@ -197,4 +187,37 @@ Even values are: 2
 Odd values are: 1 3 3 5
 Set of the array: [1, 2, 3, 5]
 Set of the array: [5, 3, 3, 2, 1]
+```
+
+## Generals
+
+These are programs done by solving some coding problems provided on internet/school.
+
+### Pangram
+
+This is a game where user type a text and the program will tell whether it contains(pangram!) all the alphabetical characters(case insensitive) or not(not pangram!).
+
+[see the code for this👇](/generals/pangram/pangram.c)
+
+```bash
+~/generals/scrabble (master) $ ./pangram
+Enter the text: The quick, brown fox jumps over the lazy dog!
+pangram!
+```
+
+### Characters Frequency
+
+This is a program to print the occurance of alphabets in a text provided as a command line argument.
+
+[see the code for this👇](/generals/charfreq/charfreq.c)
+
+```bash
+~/generals/charfreq (master) $ ./charfreq The Quick Brown Fox Jumps Over The Lazy Dog
+A 0
+B 1
+C 0
+...
+x 1
+y 1
+z 1
 ```
