@@ -39,6 +39,7 @@ Run the command as directed below👇
   - [modulus](#modulus)
   - [reverse num](#reverse-num)
   - [arrays](#arrays)
+  - [circle](#circle)
 - [generals](#generals)
   - [pangram](#pangram)
   - [Characters Frequency](#characters-frequency)
@@ -187,6 +188,19 @@ Even values are: 2
 Odd values are: 1 3 3 5
 Set of the array: [1, 2, 3, 5]
 Set of the array: [5, 3, 3, 2, 1]
+```
+
+### Circle
+
+This is a program to calculate the area and circumference of a circle whose radius is provided by the user.
+
+[see the codes for this👇](/math/circle/circle.c)
+
+```bash
+~/math/circle (master) $ ./circle
+Enter the radius of the circle: 5.3
+Area: 88.28
+Circumference: 33.31
 ```
 
 ## Generals
