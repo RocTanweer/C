@@ -43,6 +43,8 @@ Run the command as directed below👇
 - [generals](#generals)
   - [pangram](#pangram)
   - [Characters Frequency](#characters-frequency)
+- [string](#string)
+  - [length](#length)
 
 ## Patterns
 
@@ -234,4 +236,20 @@ C 0
 x 1
 y 1
 z 1
+```
+
+## String
+
+These are some programs doing operations on String.
+
+### Length
+
+This program gets _string_ from the user and prints it's length using **pointers**.
+
+[see the code for this👇](/string/length/length.c)
+
+```bash
+~/string/length (master) $ ./length
+Enter your text: The Quick Brown Fox Jumps Over The Lazy Dog
+The length is: 44
 ```
