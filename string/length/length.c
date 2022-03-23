@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
     Things I learnt from this:
@@ -11,10 +12,20 @@ int find_len(char *p);
 
 int main()
 {
-    char str[] = "The Quick Brown Fox Jumps Over The Lazy Dog";
+    char str[100];
+
+    printf("Enter you text: ");
+    fgets(str, sizeof(str), stdin);
 
     int len = find_len(str);
-    printf("The length is: %d\n", len);
+    if (len == 99)
+    {
+        printf("\nLIMIT: 99 characters\n");
+    }
+    else
+    {
+        printf("The length is: %d\n", len);
+    }
 
     return 0;
 }
