@@ -40,6 +40,7 @@ Run the command as directed below👇
   - [reverse num](#reverse-num)
   - [arrays](#arrays)
   - [circle](#circle)
+  - [fibonacci](#fibonacci)
 - [generals](#generals)
   - [pangram](#pangram)
   - [Characters Frequency](#characters-frequency)
@@ -203,6 +204,18 @@ This is a program to calculate the area and circumference of a circle whose radi
 Enter the radius of the circle: 5.3
 Area: 88.28
 Circumference: 33.31
+```
+
+### Fibonacci
+
+This is a series of numbers in which the first and second numbers are 0 and 1 respectively. Any consecutive number is then obtained by adding the previous two numbers.
+
+[see the codes for this👇](/math/fibonacci/fibonacci.c)
+
+```bash
+~/math/fibonacci (master) $ ./fibonacci
+Enter the number: 11
+0 1 1 2 3 5 8 13 21 34 55
 ```
 
 ## Generals
