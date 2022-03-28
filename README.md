@@ -41,6 +41,7 @@ Run the command as directed below👇
   - [arrays](#arrays)
   - [circle](#circle)
   - [fibonacci](#fibonacci)
+  - [factorial](#factorial)
 - [generals](#generals)
   - [pangram](#pangram)
   - [Characters Frequency](#characters-frequency)
@@ -216,6 +217,18 @@ This is a series of numbers in which the first and second numbers are 0 and 1 re
 ~/math/fibonacci (master) $ ./fibonacci
 Enter the number: 11
 0 1 1 2 3 5 8 13 21 34 55
+```
+
+### Factorial
+
+This is a series of numbers in which the nth number is found by multiplying it by all the previous numbers up until and including 0, whose value, according to this series, is 1. Any nth number of this series is >= 0.
+
+[see the codes for this👇](/math/factorial/factorial.c)
+
+```bash
+~/math/factorial (master) $ ./factorial
+Enter the number: 11
+1 1 2 6 24 120 720 5040 40320 362880 3628800
 ```
 
 ## Generals
