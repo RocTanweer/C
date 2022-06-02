@@ -2,7 +2,7 @@
 
 #define NUM_OF_ELEMENTS 10
 
-void bubbleSort(int arr[]);
+void selectionSort(int arr[]);
 void swap(int *a, int *b);
 
 int main()
@@ -16,7 +16,7 @@ int main()
         scanf("%d", &numbers[i]);
     }
 
-    bubbleSort(numbers);
+    selectionSort(numbers);
 
     for (int i = 0; i < 10; i++)
     {
@@ -26,15 +26,15 @@ int main()
     return 0;
 }
 
-void bubbleSort(int arr[])
+void selectionSort(int arr[])
 {
-    for (int i = 0; i < NUM_OF_ELEMENTS; i++)
+    for (int i = 0; i < NUM_OF_ELEMENTS - 1; i++)
     {
-        for (int j = 0; j < NUM_OF_ELEMENTS - 1; j++)
+        for (int j = i + 1; j < NUM_OF_ELEMENTS; j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[i] > arr[j])
             {
-                swap(&arr[j], &arr[j + 1]);
+                swap(&arr[i], &arr[j]);
             }
         }
     }
