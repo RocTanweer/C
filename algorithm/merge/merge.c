@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define NUM_OF_ELEMENTS 2
+#define NUM_OF_ELEMENTS 8
 
-int *mergeSort(int arr[], int arrLen);
+int *mergeSort(int *arr, int arrLen);
 
 int sortedArry[NUM_OF_ELEMENTS];
 
@@ -30,12 +30,12 @@ int main()
     return 0;
 }
 
-int *mergeSort(int arr[], int arrLen)
+int *mergeSort(int *arr, int arrLen)
 {
     // base condition
     if (arrLen == 1)
     {
-        return &arr[0];
+        return arr;
     }
 
     int middleMan = arrLen / 2;
@@ -52,20 +52,19 @@ int *mergeSort(int arr[], int arrLen)
         rightSlice[j] = arr[k];
     }
 
-    int *leftSlicePtr = mergeSort(leftSlice, middleMan);
-    int *rightSlicePtr = mergeSort(rightSlice, middleMan);
+    int *leftSlicePtr = mergeSort(&leftSlice[0], middleMan);
+    int *rightSlicePtr = mergeSort(&rightSlice[0], middleMan);
 
-    int tempArray[arrLen];
-
+    // int tempArray[arrLen];
+    int leftCounter = 0;
+    int rightCounter = 0;
     for (int i = 0; i < arrLen; i++)
     {
-        int leftCounter = 0;
-        int rightCounter = 0;
         if (leftCounter == middleMan - 1)
         {
             for (int j = rightCounter; j < middleMan; j++)
             {
-                tempArray[i] = *(rightSlicePtr + j);
+                *(arr + i) = *(rightSlicePtr + j);
                 i++;
             }
         }
@@ -74,27 +73,30 @@ int *mergeSort(int arr[], int arrLen)
         {
             for (int j = leftCounter; j < middleMan; j++)
             {
-                tempArray[i] = *(leftSlicePtr + j);
+                *(arr + i) = *(leftSlicePtr + j);
                 i++;
             }
         }
         if (*(leftSlicePtr + leftCounter) > *(rightSlicePtr + rightCounter))
         {
-            tempArray[i] = *(rightSlicePtr + rightCounter);
+            *(arr + i) = *(rightSlicePtr + rightCounter);
             rightCounter++;
         }
-
         if (*(leftSlicePtr + leftCounter) < *(rightSlicePtr + rightCounter))
         {
-            tempArray[i] = *(leftSlicePtr + leftCounter);
+            *(arr + i) = *(leftSlicePtr + leftCounter);
             leftCounter++;
         }
     }
 
+    printf("final array with length %d\n:", arrLen);
     for (int i = 0; i < arrLen; i++)
     {
-        printf("%d\n", tempArray[i]);
+        printf("%d ", *(arr + i));
     }
+    printf("\n");
+
+    return arr;
 
     // printf("leftSlice first element = %d\n", *leftSlicePtr);
     // printf("rightSlice first element = %d\n", *rightSlicePtr);
